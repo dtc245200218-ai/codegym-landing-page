@@ -1,0 +1,1068 @@
+/* ==============================
+   1. CÀI ĐẶT CHUNG
+============================== */
+
+:root {
+  --primary-color: #4f46e5;
+  --primary-dark: #3730a3;
+  --secondary-color: #06b6d4;
+  --accent-color: #f59e0b;
+  --text-color: #1e293b;
+  --muted-color: #64748b;
+  --light-bg: #f8fafc;
+  --white: #ffffff;
+  --border-color: #e2e8f0;
+  --shadow: 0 8px 25px rgba(30, 41, 59, 0.08);
+  --shadow-hover: 0 15px 35px rgba(79, 70, 229, 0.15);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+  background-color: var(--white);
+  line-height: 1.7;
+}
+
+section,
+header {
+  scroll-margin-top: 75px;
+}
+
+a {
+  transition: all 0.25s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+p {
+  color: var(--muted-color);
+}
+
+.btn {
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0.2px;
+  transition: all 0.25s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-color) !important;
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 5px 14px rgba(79, 70, 229, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.3);
+}
+
+.btn-rounded {
+  border-radius: 50px !important;
+  padding: 12px 25px;
+}
+
+/* ==============================
+   2. HEADER / NAVBAR
+============================== */
+
+.main-navbar {
+  background-color: #111827;
+  padding: 12px 0;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+}
+
+.main-navbar .navbar-brand {
+  color: var(--white);
+  font-size: 22px;
+  letter-spacing: -0.5px;
+}
+
+.main-navbar .navbar-brand i {
+  color: #818cf8;
+}
+
+.main-navbar .nav-link {
+  color: #e2e8f0 !important;
+  font-size: 14px;
+  margin: 0 5px;
+}
+
+.main-navbar .nav-link:hover {
+  color: #a5b4fc !important;
+}
+
+.btn-register {
+  background-color: var(--primary-color);
+  color: var(--white) !important;
+  font-size: 14px;
+  padding: 10px 20px;
+  margin-left: 8px;
+}
+
+.btn-register:hover {
+  background-color: var(--primary-dark);
+}
+
+/* ==============================
+   3. HERO SECTION
+============================== */
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0 95px;
+  color: var(--white);
+  background:
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(6, 182, 212, 0.22),
+      transparent 30%
+    ),
+    linear-gradient(135deg, #111827 0%, #1e1b4b 55%, #312e81 100%);
+}
+
+.hero-label {
+  display: inline-block;
+  padding: 8px 14px;
+  margin-bottom: 22px;
+  color: #c7d2fe;
+  background: rgba(129, 140, 248, 0.14);
+  border: 1px solid rgba(165, 180, 252, 0.25);
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero-section h1 {
+  max-width: 650px;
+  margin-bottom: 24px;
+  color: var(--white);
+  font-size: 52px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  line-height: 1.18;
+}
+
+.hero-section h1 span {
+  display: block;
+  color: #a5b4fc;
+}
+
+.hero-description {
+  max-width: 580px;
+  margin-bottom: 30px;
+  color: #cbd5e1;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero-actions .btn {
+  margin: 0;
+  font-size: 14px;
+}
+
+.hero-actions .btn-outline-light {
+  border-width: 1px;
+}
+
+.hero-actions .btn-outline-light:hover {
+  color: var(--primary-dark) !important;
+  background-color: var(--white) !important;
+}
+
+.hero-note {
+  margin-top: 28px;
+  color: #cbd5e1;
+  font-size: 12px;
+}
+
+.hero-note i {
+  color: #67e8f9;
+}
+
+/* Khung code minh họa */
+
+.hero-card {
+  position: relative;
+  padding: 25px 10px;
+}
+
+.code-window {
+  position: relative;
+  padding: 30px 25px;
+  color: #e2e8f0;
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(165, 180, 252, 0.25);
+  border-radius: 18px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+  transform: rotate(1deg);
+}
+
+.window-dots {
+  display: flex;
+  gap: 7px;
+  margin-bottom: 25px;
+}
+
+.window-dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #f87171;
+}
+
+.window-dots span:nth-child(2) {
+  background-color: #fbbf24;
+}
+
+.window-dots span:nth-child(3) {
+  background-color: #34d399;
+}
+
+.code-window p {
+  margin-bottom: 12px;
+  color: #e2e8f0;
+  font-family: Consolas, monospace;
+  font-size: 13px;
+}
+
+.code-window .code-comment {
+  color: #94a3b8;
+}
+
+.code-purple {
+  color: #c4b5fd;
+}
+
+.code-green {
+  color: #6ee7b7;
+}
+
+.code-orange {
+  color: #fdba74;
+}
+
+.code-indent {
+  padding-left: 25px;
+}
+
+.code-window .code-result {
+  margin-top: 25px;
+  padding-top: 15px;
+  color: #67e8f9;
+  border-top: 1px solid #334155;
+  font-size: 11px;
+}
+
+.floating-badge {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  color: var(--text-color);
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.floating-badge i {
+  color: var(--primary-color);
+  font-size: 18px;
+}
+
+.badge-one {
+  top: 0;
+  right: -5px;
+}
+
+.badge-two {
+  bottom: 0;
+  left: -10px;
+}
+
+/* ==============================
+   4. PHẦN NỘI DUNG CHUNG
+============================== */
+
+.section-padding {
+  padding: 90px 0;
+}
+
+.section-heading {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.section-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--primary-color);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.section-heading h2 {
+  margin-bottom: 16px;
+  color: #111827;
+  font-size: 34px;
+  letter-spacing: -0.6px;
+}
+
+.section-heading p {
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 15px;
+}
+
+.content-title {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.content-text {
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+.check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.check-item i {
+  margin-top: 5px;
+  color: #059669;
+  font-size: 17px;
+}
+
+/* Minh họa phần giới thiệu */
+
+.about-illustration {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 330px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #eef2ff, #cffafe);
+  border-radius: 22px;
+}
+
+.about-illustration > i {
+  z-index: 1;
+  color: var(--primary-color);
+  font-size: 120px;
+  filter: drop-shadow(0 12px 15px rgba(79, 70, 229, 0.2));
+}
+
+.circle {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+}
+
+.circle-one {
+  top: -35px;
+  right: -25px;
+  width: 170px;
+  height: 170px;
+  background: rgba(6, 182, 212, 0.18);
+}
+
+.circle-two {
+  bottom: -55px;
+  left: -35px;
+  width: 200px;
+  height: 200px;
+  background: rgba(79, 70, 229, 0.12);
+}
+
+.illustration-caption {
+  position: absolute;
+  bottom: 22px;
+  padding: 10px 18px;
+  color: var(--primary-dark);
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ==============================
+   5. LỢI ÍCH / MATERIAL CARDS
+============================== */
+
+.benefits-section {
+  background-color: var(--light-bg);
+}
+
+.benefit-card,
+.course-card {
+  overflow: hidden;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.benefit-card:hover,
+.course-card:hover {
+  transform: translateY(-7px);
+  box-shadow: var(--shadow-hover);
+}
+
+.benefit-card .card-body {
+  padding: 30px 25px;
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 23px;
+  border-radius: 14px;
+  font-size: 22px;
+}
+
+.icon-blue {
+  color: #2563eb;
+  background: #dbeafe;
+}
+
+.icon-purple {
+  color: #7c3aed;
+  background: #ede9fe;
+}
+
+.icon-orange {
+  color: #c2410c;
+  background: #ffedd5;
+}
+
+.icon-green {
+  color: #047857;
+  background: #d1fae5;
+}
+
+.icon-pink {
+  color: #be185d;
+  background: #fce7f3;
+}
+
+.icon-teal {
+  color: #0f766e;
+  background: #ccfbf1;
+}
+
+.benefit-card .card-title {
+  margin-bottom: 13px;
+  color: #1e293b;
+  font-size: 19px;
+}
+
+.benefit-card .card-text {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* ==============================
+   6. CHƯƠNG TRÌNH HỌC
+============================== */
+
+.course-card .course-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 125px;
+  font-size: 52px;
+}
+
+.course-blue {
+  color: #1d4ed8;
+  background: #dbeafe;
+}
+
+.course-orange {
+  color: #c2410c;
+  background: #ffedd5;
+}
+
+.course-purple {
+  color: #7c3aed;
+  background: #ede9fe;
+}
+
+.course-green {
+  color: #047857;
+  background: #d1fae5;
+}
+
+.course-card .card-body {
+  padding: 25px 22px;
+}
+
+.course-card .card-title {
+  margin-bottom: 12px;
+  font-size: 19px;
+}
+
+.course-card .card-text {
+  min-height: 100px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.course-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: var(--primary-color);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.course-link:hover {
+  color: var(--primary-dark);
+  text-decoration: none;
+}
+
+.program-note {
+  margin-top: 10px;
+  font-size: 12px;
+  font-style: italic;
+}
+
+/* ==============================
+   7. QUY TRÌNH HỌC
+============================== */
+
+.process-section {
+  background: #f8fafc;
+}
+
+.process-card {
+  position: relative;
+  height: 100%;
+  padding: 30px 25px;
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-5px);
+}
+
+.process-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 23px;
+  color: var(--white);
+  background: var(--primary-color);
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 0 6px 15px rgba(79, 70, 229, 0.2);
+}
+
+.process-card h4 {
+  margin-bottom: 13px;
+  font-size: 20px;
+}
+
+.process-card p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+/* ==============================
+   8. CƠ HỘI NGHỀ NGHIỆP
+============================== */
+
+.career-panel {
+  padding: 55px;
+  background: linear-gradient(135deg, #eef2ff, #f0fdfa);
+  border: 1px solid #e0e7ff;
+  border-radius: 24px;
+}
+
+.career-panel h2 {
+  margin-bottom: 20px;
+  color: #111827;
+  font-size: 34px;
+}
+
+.career-panel > .row p {
+  font-size: 14px;
+}
+
+.career-point {
+  display: flex;
+  gap: 12px;
+  margin-top: 14px;
+  font-size: 14px;
+}
+
+.career-point i {
+  margin-top: 5px;
+  color: #059669;
+}
+
+.career-illustration {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+}
+
+.career-illustration > i {
+  color: var(--primary-color);
+  font-size: 110px;
+  filter: drop-shadow(0 10px 12px rgba(79, 70, 229, 0.15));
+}
+
+.career-floating {
+  position: absolute;
+  padding: 11px 15px;
+  color: var(--text-color);
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.career-floating i {
+  margin-right: 5px;
+  color: var(--primary-color);
+}
+
+.career-floating-top {
+  top: 25px;
+  right: 10px;
+}
+
+.career-floating-bottom {
+  bottom: 25px;
+  left: 10px;
+}
+
+/* ==============================
+   9. FORM ĐĂNG KÝ
+============================== */
+
+.contact-section {
+  background-color: var(--light-bg);
+}
+
+.contact-title {
+  margin-bottom: 20px;
+  font-size: 36px;
+  letter-spacing: -0.5px;
+}
+
+.contact-feature {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.contact-feature i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  color: var(--primary-color);
+  background: #e0e7ff;
+  border-radius: 11px;
+}
+
+.contact-card {
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.contact-card .card-body {
+  padding: 28px;
+}
+
+.contact-card h3 {
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+.form-description {
+  margin-bottom: 25px;
+  font-size: 13px;
+}
+
+.contact-card .md-form {
+  margin-bottom: 28px;
+}
+
+.contact-card .form-control {
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+.contact-card label {
+  color: var(--muted-color);
+  font-size: 13px;
+}
+
+.contact-card select.form-control {
+  height: 42px;
+  margin-top: 8px;
+  border: 0;
+  border-bottom: 1px solid #ced4da;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.contact-card select.form-control:focus {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.contact-card button {
+  margin-top: 18px;
+  padding: 13px 20px;
+}
+
+.form-message {
+  display: none;
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.form-message.success {
+  display: block;
+  color: #065f46;
+  background: #d1fae5;
+}
+
+.form-message.error {
+  display: block;
+  color: #991b1b;
+  background: #fee2e2;
+}
+
+.privacy-note {
+  display: block;
+  margin-top: 15px;
+  color: var(--muted-color);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+/* ==============================
+   10. FOOTER
+============================== */
+
+.main-footer {
+  padding: 55px 0 20px;
+  color: #cbd5e1;
+  background: #111827;
+}
+
+.footer-brand {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: var(--white);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.footer-brand i {
+  color: #a5b4fc;
+}
+
+.footer-brand:hover {
+  color: #c7d2fe;
+  text-decoration: none;
+}
+
+.footer-description {
+  max-width: 400px;
+  color: #94a3b8;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.main-footer h5 {
+  margin-bottom: 20px;
+  color: var(--white);
+  font-size: 15px;
+}
+
+.main-footer .col-lg-3 a,
+.main-footer .col-lg-4 a {
+  display: block;
+  margin-bottom: 12px;
+  color: #cbd5e1;
+  font-size: 13px;
+}
+
+.main-footer .col-lg-3 a:hover,
+.main-footer .col-lg-4 a:hover {
+  color: #a5b4fc;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #334155;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.footer-bottom a {
+  color: #c7d2fe;
+  font-size: 12px;
+}
+
+/* ==============================
+   11. RESPONSIVE: TABLET
+============================== */
+
+@media (max-width: 991.98px) {
+  .hero-section {
+    padding: 75px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 44px;
+  }
+
+  .hero-card {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .main-navbar .navbar-nav {
+    align-items: stretch !important;
+    padding: 15px 0;
+  }
+
+  .main-navbar .nav-link {
+    padding: 10px 0;
+  }
+
+  .btn-register {
+    display: inline-block;
+    margin: 10px 0 0;
+    text-align: center;
+  }
+
+  .section-padding {
+    padding: 70px 0;
+  }
+
+  .career-panel {
+    padding: 35px;
+  }
+
+  .course-card .card-text {
+    min-height: 0;
+  }
+}
+
+/* ==============================
+   12. RESPONSIVE: ĐIỆN THOẠI
+============================== */
+
+@media (max-width: 575.98px) {
+  .hero-section {
+    padding: 55px 0 65px;
+  }
+
+  .hero-label {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+  }
+
+  .hero-section h1 {
+    font-size: 35px;
+    letter-spacing: -0.7px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+  .hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    margin: 0;
+    font-size: 13px;
+  }
+
+  .hero-note {
+    font-size: 11px;
+    line-height: 1.9;
+  }
+
+  .hero-card {
+    padding: 20px 5px;
+  }
+
+  .code-window {
+    padding: 24px 15px;
+  }
+
+  .code-window p {
+    font-size: 11px;
+  }
+
+  .floating-badge {
+    padding: 9px 11px;
+    font-size: 10px;
+  }
+
+  .floating-badge i {
+    font-size: 15px;
+  }
+
+  .badge-one {
+    right: -3px;
+  }
+
+  .badge-two {
+    left: -3px;
+  }
+
+  .section-padding {
+    padding: 55px 0;
+  }
+
+  .section-heading h2 {
+    font-size: 27px;
+  }
+
+  .section-heading p {
+    font-size: 13px;
+  }
+
+  .content-title {
+    font-size: 24px;
+  }
+
+  .about-illustration {
+    min-height: 250px;
+  }
+
+  .about-illustration > i {
+    font-size: 90px;
+  }
+
+  .benefit-card .card-body {
+    padding: 25px 22px;
+  }
+
+  .career-panel {
+    padding: 25px 18px;
+    border-radius: 18px;
+  }
+
+  .career-panel h2 {
+    font-size: 27px;
+  }
+
+  .career-illustration {
+    min-height: 230px;
+  }
+
+  .career-illustration > i {
+    font-size: 85px;
+  }
+
+  .contact-title {
+    font-size: 29px;
+  }
+
+  .contact-card .card-body {
+    padding: 18px;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+/* Tôn trọng cài đặt giảm chuyển động của người dùng */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
